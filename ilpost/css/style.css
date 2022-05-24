@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+head {
+    display: none;
+}
+
+body {
+    display: block;
+    max-width: 990px;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.5;
+    background-color: white;
+    vertical-align: center;
+}
+
+/* NAVIGATION BAR */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+nav {
+    position: page;
+    display: block;
+    font-family: "Bebas Nueue", Serif;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    height: 150px;
+    letter-spacing: 0.75px;
+
+    padding: 0.5em;
+    color: #2da8c6;
+    font-family: 'BebasNeueRegular';
+}
+
+.userbar{
+    position: relative;
+    font-size: 15px;
+}
+.userbar li {
+    display: inline;
+}
+
+#userbar-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+#userbar-right ul li {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+
+a.podcast, a.shop {
+    position: relative;
+    float: left;
+    color: black;
+    text-decoration: none;
+    padding: 7.5px;
+    text-align: center;
+    vertical-align: center;
+}
+
+a.entra{
+    float: right;
+    padding: 7.5px;
+    color: #2da8c6;
+}
+
+a.abbonati, a.utente {
+    float: right;
+    text-decoration: none;
+    padding: 7.5px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+a.abbonati{
+    background-color: #ffe725;
+    vertical-align: baseline;
+
+    padding: 7.5px 7.5px 5px 7.5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.logo{
+    clear: both;
+    position: relative;
+    float: right;
+    width: 230px;
+    height: 92px;
+}
+
+#sectionbar ul {
+    position: relative;
+    float: right;
+}
+
+
+.social{
+    position: relative;
+}
+
+#social li {
+    line-height: 20px;
+    font-size: 23px;
+    font-family: Georgia,Times,"Times New Roman",serif;;
+}
+#social li a:hover {
+    text-decoration: underline;
+}
+
+a.twitter {
+    color: white;
+    background-color: #1b95e0;
+}
+
+a.facebook {
+    color: white;
+    background: #1877f2;
+}
+.facebook:before {
+    content: "\f39e";
+    color: white;
+}
+.instagram {
+    color: white;
+    background-color: #c13584;
+}
+
+a.telegram{
+    color: white;
+    background-color: #08c;
+}
+
+a.telegram:before {
+    font-weight: normal;
+    margin-right: 5px;
+    font-family: "Font Awesome 6 Brands";
+    content: "\f3fe";
+}
+
+
+#mini-section{
+    position: relative;
+}
