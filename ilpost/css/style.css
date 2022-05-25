@@ -192,7 +192,27 @@ a.telegram:before {
 .mini-section{
     display: flex;
     flex-direction: row;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin-bottom: 1px;
 }
+
+a.mini-article {
+    padding: 0 5px 5px 5px;
+    margin-bottom: 10px;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+a.mini-article:nth-child(3){
+    border-right: none;
+}
+
+#first-article{
+    border-top: 1px solid rgb(204, 204, 204);
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
 
 
 footer{
@@ -220,6 +240,11 @@ footer{
 .logo-mini a img {
     width: 100px;
 }
+
+
+
+
+
 
 
 /* MOBILE SECTION */
