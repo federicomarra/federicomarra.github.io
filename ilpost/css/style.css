@@ -68,6 +68,12 @@ nav {
     flex-direction: row;
 }
 
+#tre-linee, #icona-cerca{
+    display: none;
+    font-size: large;
+    padding: 10px 20px;
+}
+
 .sitelinks a {
     padding: 0 3px;
 }
@@ -364,6 +370,19 @@ footer {
 
 /* IPAD MODE */
 @media only screen and (max-width: 900px) {
+    #tre-linee, #icona-cerca{
+        display: block;
+    }
+    .logo img{
+        width: 150px;
+        height: 60px;
+    }
+
+    .sectionbar{
+        display: none;
+    }
+
+
     .main {
         display: grid;
         grid-template-columns: 60% 40%;
