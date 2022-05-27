@@ -209,7 +209,8 @@ a.telegram:before {
     border-bottom: 1px solid rgb(204, 204, 204);
     margin-bottom: 1px;
 }
-.mini-section a:hover{
+
+.mini-section a:hover {
     text-decoration: underline;
 }
 
@@ -231,23 +232,25 @@ a.mini-article:nth-child(3) {
     display: flex;
     flex-direction: column;
 }
-#first-article img{
-    min-width: 480px;
-    max-width: 489px;
+
+#first-article img {
     margin-right: 10px;
 }
-#first-article-text{
+
+#first-article-text {
     max-width: 489px;
 }
-#first-article h2{
+
+#first-article h2 {
     font-size: 24px;
     line-height: 1em;
 }
-#first-article p{
+
+#first-article p {
     font-size: 12px;
 }
 
-.article{
+.article {
     padding: 10px 0;
     border-bottom: 1px solid rgb(204, 204, 204);
     font-weight: normal;
@@ -256,15 +259,17 @@ a.mini-article:nth-child(3) {
     grid-template-columns: 22% 88%;
     text-rendering: optimizeLegibility;
 }
-.article a img{
+
+.article a img {
     padding-top: 5px;
-    width: 105px;
     vertical-align: center;
 }
-.article-text{
+
+.article-text {
     padding: 6px 13px;
     max-width: 360px;
 }
+
 .article-text h2 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
@@ -272,7 +277,8 @@ a.mini-article:nth-child(3) {
     font-weight: 400;
     letter-spacing: 0.5px;
 }
-.article-text p{
+
+.article-text p {
     color: #333;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 12px;
@@ -286,10 +292,11 @@ a.mini-article:nth-child(3) {
 }
 
 /* CENTER-SECTION */
-.center-section{
+.center-section {
 
 }
-#news-title{
+
+#news-title {
     color: white;
     background-color: #2da8c6;
     font-family: "BebasNeueRegular", Serif;
@@ -300,6 +307,7 @@ a.mini-article:nth-child(3) {
     letter-spacing: 0.05em;
     height: 15px;
 }
+
 ul.news-list li {
     font-size: 12px;
     font-weight: 700;
@@ -308,6 +316,7 @@ ul.news-list li {
     padding: 0.5em 0 0.5em 1em;
     border-bottom: 1px dotted #CCC;
 }
+
 ul.news-list li::before {
     content: ■; /* Insert content that looks like bullets */
     font-size: 1px;
@@ -321,7 +330,6 @@ ul.news-list li::before {
 ul.news-list li a:hover {
     text-decoration: underline;
 }
-
 
 
 /* FOOTER SECTION */
@@ -376,9 +384,22 @@ footer {
 
 /* MOBILE MODE */
 @media only screen and (max-width: 685px) {
+    body {
+    }
+
     .main {
         grid-template-columns: 100%;
         grid-auto-flow: row;
+    }
+
+    .article {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .article-text{
+        max-width: none;
     }
 
 }
