@@ -265,6 +265,9 @@ a.mini-article:nth-child(3) {
     grid-template-columns: 22% 88%;
     text-rendering: optimizeLegibility;
 }
+#middle-article {
+    border-top: 1px solid rgb(204, 204, 204);
+}
 
 .article a img {
     padding-top: 5px;
@@ -295,6 +298,10 @@ a.mini-article:nth-child(3) {
 
 .article-text a:hover {
     text-decoration: underline;
+}
+
+#virgolette{
+    padding-bottom: 10px;
 }
 
 /* CENTER-SECTION */
