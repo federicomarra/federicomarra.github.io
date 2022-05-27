@@ -330,6 +330,7 @@ ul.news-list li {
 }
 
 ul.news-list li::before {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     content: "■";
     font-size: 1px;
     color: #2da8c6;
@@ -387,8 +388,7 @@ ul.news-list li a:hover {
     line-height: 14px;
 }
 #flashes-list li img {
-    width: min(70px, 100%);
-    height: 70px;
+    width: 100%;
     margin: auto 0 auto auto;
     padding: 2px;
 }
@@ -628,6 +628,9 @@ footer {
     #flashes-list li a {
         font-size: 16px;
         line-height: 18px;
+    }
+    #flashes-list li img{
+
     }
 
 }
