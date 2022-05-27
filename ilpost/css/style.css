@@ -321,13 +321,12 @@ ul.news-list li {
 }
 
 ul.news-list li::before {
-    content: ■; /* Insert content that looks like bullets */
+    content: "■"; /* Insert content that looks like bullets */
     font-size: 1px;
     width: 1px;
     height: 1px;
     color: #2da8c6;
-    padding-right: 8px;
-    background-color: #2da8c6; /* Or a color you prefer */
+    padding-right: 8px; /* Or a color you prefer */
 }
 
 ul.news-list li a:hover {
@@ -372,7 +371,6 @@ ul.news-list li a:hover {
     font-size: 12px;
     font-weight: bold;
     line-height: 14px;
-
 }
 #flashes-list li img {
     width: min(70px, 100%);
@@ -497,9 +495,6 @@ ul.news-list li a:hover {
 }
 
 
-
-
-
 /* FOOTER SECTION */
 footer {
     display: flex;
@@ -582,6 +577,12 @@ footer {
     .article-text{
         max-width: none;
     }
-    
+    #flashes-list li {
+        grid-template-columns: 85% 15%;
+    }
+    #flashes-list li a {
+        font-size: 16px;
+        line-height: 18px;
+    }
 
 }
