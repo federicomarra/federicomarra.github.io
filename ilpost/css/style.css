@@ -306,7 +306,6 @@ a.mini-article:nth-child(3) {
 
 /* CENTER-SECTION */
 
-
 #news-title {
     color: white;
     background-color: #2da8c6;
@@ -342,16 +341,23 @@ ul.news-list li a:hover {
 }
 
 
-.centre-image{
+.centre-right-image{
     font-family: "BebasNeueRegular", Serif;
     color: #2da8c6;
     background-color: #f5f5f5;
     padding: 0 0.5em 0 0.5em;
-    margin: 1em auto 1em auto;
+    margin: 1em auto 0 auto;
 }
-.centre-image a{
+.centre-right-image a{
     font-family: "BebasNeueRegular", Serif;
     color: #2da8c6;
+}
+.podcast-app{
+    margin-top: 15px;
+}
+
+.flashes{
+    margin-top: 10px;
 }
 
 .flashes-title {
