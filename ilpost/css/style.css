@@ -389,18 +389,23 @@ ul.news-list li a:hover {
 
 .cit{
     margin: 0.5rem 1rem;
+    margin-top: 1rem;
     text-align: center;
     font-weight: 200;
+    font-size: 16px;
 }
 
 .cit h4 span{
     font-family: "BebasNeueRegular", Serif;
+    font-size: 22px;
+    font-weight: lighter;
     background-color: #ffe725;
     padding: 4px 4px 2px 4px;
 }
 
 .cit h5, .cit h6{
     font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 17px;
     font-weight: 200;
     margin-top: 5px;
 }
