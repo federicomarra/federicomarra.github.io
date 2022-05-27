@@ -207,6 +207,9 @@ a.telegram:before {
     border-bottom: 1px solid rgb(204, 204, 204);
     margin-bottom: 1px;
 }
+.mini-section a:hover{
+    text-decoration: underline;
+}
 
 a.mini-article {
     padding: 0 5px 5px 5px;
@@ -223,14 +226,20 @@ a.mini-article:nth-child(3) {
     border-top: 1px solid rgb(204, 204, 204);
     padding: 10px 0;
     border-bottom: 1px solid rgb(204, 204, 204);
-    display: flow;
+    display: flex;
+    flex-direction: column;
 }
 #first-article img{
-    position: center;
-    width: 489px;
+    min-width: 480px;
+    max-width: 489px;
+    margin-right: 10px;
+}
+#first-article-text{
+    max-width: 489px;
 }
 #first-article h2{
     font-size: 24px;
+    line-height: 1em;
 }
 #first-article p{
     font-size: 12px;
@@ -240,26 +249,34 @@ a.mini-article:nth-child(3) {
     padding: 10px 0;
     border-bottom: 1px solid rgb(204, 204, 204);
     font-weight: normal;
-    line-height: 1.3em;
     height: auto;
     display: grid;
     grid-template-columns: 22% 88%;
     text-rendering: optimizeLegibility;
 }
 .article a img{
-    width: 109px;
-
+    padding-top: 5px;
+    width: 105px;
+    vertical-align: center;
 }
 .article-text{
-    border: ;
+    padding: 6px 13px;
+    max-width: 360px;
 }
 .article-text h2 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
+    line-height: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
-.article-text p {
+.article-text p{
+    color: #333;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 12px;
+    line-height: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.1px;
 }
 
 .article-text a:hover {
