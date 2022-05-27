@@ -434,7 +434,6 @@ ul.news-list li a:hover {
 .hour{
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: 400;
-    font-size: 14px;
     color: #333333;
 }
 .bit a{
@@ -456,14 +455,46 @@ ul.news-list li a:hover {
     font-weight: 200;
 }
 
+#dalla-redazione-title, #ultime-gallery-title{
+    font-size: 0.6rem;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+
 .redaz a{
-    font-size: 0.75rem;
+    display: block;
+
+    line-height: 1.4em;
+    font-size: 0.65rem;
 }
 .redaz a:hover{
      text-decoration: underline;
  }
+.dalla-redazione-item, .ultime-gallery-item{
+    padding: 0.3rem 0;
+    border-bottom: 1px dotted #CCC;
+}
+.dalla-redazione-item .hour{
+    font-size: 12px;
+}
+.dalla-redazione-item p{
+    font-size: 0.65rem;
+    color: #333333;
+}
 
+#ultime-gallery-title{
+    margin: 0.3rem 0;
+}
 
+.ultime-gallery-item a{
+    display: block;
+    text-align: center;
+    font-size: 0.5rem;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.ultime-gallery-item a:hover{
+    text-decoration: underline;
+}
 
 
 
@@ -551,5 +582,6 @@ footer {
     .article-text{
         max-width: none;
     }
+    
 
 }
