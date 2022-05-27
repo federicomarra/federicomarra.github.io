@@ -549,7 +549,7 @@ footer {
 
 
 /* IPAD MODE */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 908px) {
     #tre-linee, #icona-cerca{
         display: block;
     }
