@@ -281,7 +281,7 @@ a.mini-article:nth-child(3) {
     font-size: 18px;
     line-height: 1.1em;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.35px;
 }
 
 .article-text p {
@@ -577,6 +577,13 @@ footer {
     .article-text{
         max-width: none;
     }
+
+    #last-article{
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        margin-bottom: 20px;
+    }
+
     #flashes-list li {
         grid-template-columns: 85% 15%;
     }
