@@ -244,7 +244,7 @@ a.mini-article:nth-child(3) {
 }
 
 #first-article-text {
-    max-width: 489px;
+    max-width: 100%;
 }
 
 #first-article h2 {
@@ -273,7 +273,7 @@ a.mini-article:nth-child(3) {
 
 .article-text {
     padding: 6px 13px;
-    max-width: 360px;
+    max-width: 87%;
 }
 
 .article-text h2 {
@@ -312,21 +312,21 @@ a.mini-article:nth-child(3) {
 }
 
 ul.news-list li {
+    display: flex;
+    flex-direction: row;
     font-size: 12px;
     font-weight: 700;
     line-height: normal;
     color: #000;
-    padding: 0.5em 0 0.5em 1em;
+    padding: 0.5em 0 0.5em 1.5em;
     border-bottom: 1px dotted #CCC;
 }
 
 ul.news-list li::before {
-    content: "■"; /* Insert content that looks like bullets */
+    content: "■";
     font-size: 1px;
-    width: 1px;
-    height: 1px;
     color: #2da8c6;
-    padding-right: 8px; /* Or a color you prefer */
+    padding-right: 8px;
 }
 
 ul.news-list li a:hover {
@@ -407,6 +407,10 @@ ul.news-list li a:hover {
 
 .cit h6{
     color: grey;
+}
+
+#bits-left{
+    display: none;
 }
 
 .bits h1{
@@ -572,11 +576,26 @@ footer {
         padding: 10px 0;
         display: flex;
         flex-direction: column;
-
     }
     .article-text{
-        max-width: none;
+        max-width: 100%;
     }
+    #bits-left{
+        display: block;
+        margin-top: 20px;
+    }
+    .bits-item{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #CCC;
+    }
+    /*
+    li.bits-item::before {
+        content: "■";
+        font-size: 1px;
+        color: #BB1212;
+        padding-right: 8px;
+    }*/
 
     #last-article{
         padding: 10px 0;
