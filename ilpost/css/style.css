@@ -591,6 +591,10 @@ footer {
         grid-auto-flow: row;
     }
 
+    .left-section {
+        border-right: none;
+    }
+
     .article {
         padding: 10px 0;
         display: flex;
