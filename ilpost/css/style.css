@@ -409,6 +409,10 @@ ul.news-list li a:hover {
     font-size: 16px;
 }
 
+.cit a:hover{
+    text-decoration: underline;
+}
+
 .cit h4 span{
     font-family: "BebasNeueRegular", Serif;
     font-size: 22px;
