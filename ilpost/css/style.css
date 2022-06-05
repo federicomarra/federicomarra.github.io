@@ -12,6 +12,9 @@ body {
     line-height: 1.5;
 }
 
+
+/* FONTS */
+
 @font-face {
     font-family: BebasNeueRegular;
     src: url("../fonts/BebasNeueRegular.otf") format("opentype");
@@ -27,26 +30,25 @@ body {
     src: url("../fonts/FontAwesome6FreeSolid.otf") format("opentype");
 }
 
+/* GENERAL */
 img {
     width: 100%;
 }
-
-/* NAVIGATION BAR */
-
 a {
     text-decoration: none;
     color: black;
 }
-
 ul {
     list-style-type: none;
 }
 
+
+/* NAVIGATION BAR */
+
 nav {
     position: page;
     display: block;
-    font-family: "BebasNeueRegular", Serif;
-    color: black;
+    font-family: "BebasNeueRegular", serif;
     font-size: 15px;
     text-align: left;
     letter-spacing: 0.75px;
@@ -54,7 +56,6 @@ nav {
     color: #2da8c6;
     border-bottom: 3px solid #CCC;
 }
-
 .line-one, .line-two {
     display: flex;
     flex-direction: row;
@@ -62,22 +63,44 @@ nav {
     font-size: 15px;
     align-items: center;
 }
-
 #userbar-left, #userbar-right, .sitelinks, .social {
     display: flex;
     flex-direction: row;
 }
 
+/* line-one */
+a.podcast, a.shop, a.entra {
+    padding: 7.5px;
+}
+a.entra {
+    color: #2da8c6;
+}
+a.abbonati {
+    background-color: #ffe725;
+    padding: 7.5px 7.5px 5px 7.5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.abbonati span {
+    font-size: 12px;
+}
+
+/* line-two mobile */
 #tre-linee, #icona-cerca{
     display: none;
     font-size: large;
     padding: 10px 20px;
 }
 
-.sitelinks a {
-    padding: 0 3px;
+/* line-two */
+.logo img {
+     width: 230px;
+     height: 92px;
+ }
+.sectionbar {
+    display: flex;
+    flex-direction: column;
 }
-
 .sitelinks {
     justify-content: space-between;
     padding-bottom: 6px;
@@ -85,52 +108,9 @@ nav {
     margin-bottom: 5px;
     margin-top: 10px;
 }
-
-.sectionbar {
-    display: flex;
-    flex-direction: column;
+.sitelinks a {
+    padding: 0 3px;
 }
-
-a.podcast, a.shop {
-    color: black;
-    text-decoration: none;
-    padding: 7.5px;
-    text-align: center;
-    vertical-align: center;
-}
-
-a.entra {
-    padding: 7.5px;
-    color: #2da8c6;
-}
-
-a.abbonati, a.utente {
-    text-decoration: none;
-    padding: 7.5px;
-    text-align: center;
-}
-
-a.abbonati {
-    background-color: #ffe725;
-    padding: 7.5px 7.5px 5px 7.5px;
-    border-radius: 5px;
-    margin-left: 5px;
-}
-
-.abbonati span {
-    font-size: 12px;
-
-}
-
-.logo img {
-    width: 230px;
-    height: 92px;
-}
-
-#sectionbar {
-    width: 80%;
-}
-
 .social a {
     line-height: 20px;
     font-size: 12px;
@@ -140,53 +120,45 @@ a.abbonati {
     border-radius: 2px;
     margin-right: 4px;
 }
-
 .social a:hover {
     text-decoration: underline;
 }
-
 a.twitter {
     color: white;
     background-color: #1b95e0;
 }
-
 a.facebook {
     color: white;
     background: #1877f2;
 }
-
 .facebook:before {
     font-family: "FontAwesome6Brands";
     content: "\f39e";
     color: white;
 }
-
 .instagram {
     color: white;
     background-color: #c13584;
 }
-
 a.telegram {
     color: white;
     background-color: #08c;
 }
-
 a.telegram:before {
     font-family: "FontAwesome6Brands";
     content: "\f3fe";
 }
-
 .cerca, .cerca input {
     background-color: #f5f5f5;
-    font-family: BebasNeueRegular;
+    font-family: BebasNeueRegular, serif;
     margin-left: auto;
     letter-spacing: 0.75px;
 }
-
 .cerca input {
     padding: 2px;
     font-size: 12px;
 }
+
 
 /* MAIN PART */
 
@@ -195,15 +167,14 @@ a.telegram:before {
     grid-template-columns: 52% 33% 15%;
     margin-top: 10px;
 }
-
-.left-section, .center-section {
+.left-section, .center-section, .right-section {
     border-right: 1px solid #CCC;
     padding: 0 15px;
 }
-
 .right-section {
-    padding: 0 15px;
+    border-right: none;
 }
+
 
 /* LEFT-SECTION */
 
@@ -215,22 +186,17 @@ a.telegram:before {
     border-bottom: 1px solid rgb(204, 204, 204);
     margin-bottom: 1px;
 }
-
 .mini-section a:hover {
     text-decoration: underline;
 }
-
 a.mini-article {
     padding: 0 5px 5px 5px;
     margin-bottom: 10px;
     border-right: 1px solid rgb(204, 204, 204);
 }
-
 a.mini-article:nth-child(3) {
     border-right: none;
 }
-
-
 #first-article {
     border-top: 1px solid rgb(204, 204, 204);
     padding: 10px 0;
@@ -238,24 +204,19 @@ a.mini-article:nth-child(3) {
     display: flex;
     flex-direction: column;
 }
-
 #first-article img {
     margin-right: 10px;
 }
-
 #first-article-text {
     max-width: 100%;
 }
-
 #first-article h2 {
     font-size: 24px;
     line-height: 1em;
 }
-
 #first-article p {
     font-size: 12px;
 }
-
 .article {
     padding: 10px 0;
     border-bottom: 1px solid rgb(204, 204, 204);
@@ -268,17 +229,14 @@ a.mini-article:nth-child(3) {
 #middle-article {
     border-top: 1px solid rgb(204, 204, 204);
 }
-
 .article a img {
     padding-top: 5px;
     vertical-align: center;
 }
-
 .article-text {
     padding: 6px 13px;
     max-width: 87%;
 }
-
 .article-text h2 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 18px;
@@ -286,7 +244,6 @@ a.mini-article:nth-child(3) {
     font-weight: 400;
     letter-spacing: 0.35px;
 }
-
 .article-text p {
     color: #333;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -295,21 +252,23 @@ a.mini-article:nth-child(3) {
     font-weight: 400;
     letter-spacing: 0.1px;
 }
-
 .article-text a:hover {
     text-decoration: underline;
 }
-
 #virgolette{
     padding-bottom: 10px;
+}
+#bits-left{
+    display: none;
 }
 
 /* CENTER-SECTION */
 
+/* news */
 #news-title {
     color: white;
     background-color: #2da8c6;
-    font-family: "BebasNeueRegular", Serif;
+    font-family: "BebasNeueRegular", serif;
     font-weight: 400;
     font-size: 14px;
     padding: 2.1px 0 5px 4.2px;
@@ -317,7 +276,6 @@ a.mini-article:nth-child(3) {
     letter-spacing: 0.05em;
     height: 15px;
 }
-
 ul.news-list li {
     display: flex;
     flex-direction: row;
@@ -328,7 +286,6 @@ ul.news-list li {
     padding: 0.5em 0 0.5em 1.5em;
     border-bottom: 1px dotted #CCC;
 }
-
 ul.news-list li::before {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     content: "■";
@@ -336,31 +293,30 @@ ul.news-list li::before {
     color: #2da8c6;
     padding-right: 8px;
 }
-
 ul.news-list li a:hover {
     text-decoration: underline;
 }
 
-
+/* images */
 .centre-right-image{
-    font-family: "BebasNeueRegular", Serif;
+    font-family: "BebasNeueRegular", serif;
     color: #2da8c6;
     background-color: #f5f5f5;
     padding: 0 0.5em 0 0.5em;
     margin: 1em auto 0 auto;
 }
 .centre-right-image a{
-    font-family: "BebasNeueRegular", Serif;
+    font-family: "BebasNeueRegular", serif;
     color: #2da8c6;
 }
 .podcast-app{
     margin-top: 15px;
 }
 
+/* flashes */
 .flashes{
     margin-top: 10px;
 }
-
 .flashes-title {
     background-color: #292929;
     display: flex;
@@ -393,6 +349,7 @@ ul.news-list li a:hover {
     padding: 2px;
 }
 
+/* prime-pagine */
 #prime-pagine{
     display: grid;
     grid-template-columns: 33.333% 33.333% 33.333%;
@@ -401,6 +358,7 @@ ul.news-list li a:hover {
     padding: 0 5px;
 }
 
+/* cit */
 .cit{
     margin: 0.5rem 1rem;
     margin-top: 1rem;
@@ -408,38 +366,34 @@ ul.news-list li a:hover {
     font-weight: 200;
     font-size: 16px;
 }
-
 .cit a:hover{
     text-decoration: underline;
 }
-
 .cit h4 span{
-    font-family: "BebasNeueRegular", Serif;
+    font-family: "BebasNeueRegular", serif;
     font-size: 22px;
     font-weight: lighter;
     background-color: #ffe725;
     padding: 4px 4px 2px 4px;
 }
-
 .cit h5, .cit h6{
     font-family: Georgia, Times, "Times New Roman", serif;
     font-size: 17px;
     font-weight: 200;
     margin-top: 5px;
 }
-
 .cit h6{
     color: grey;
 }
 
-#bits-left{
-    display: none;
-}
 
+/* RIGHT SECTION */
+
+/* bits */
 .bits h1{
     color: white;
     background-color: #BB1212;
-    font-family: "BebasNeueRegular", Serif;
+    font-family: "BebasNeueRegular", serif;
     font-weight: 400;
     font-size: 14px;
     padding: 2.1px 0 5px 4.2px;
@@ -470,7 +424,6 @@ ul.news-list li a:hover {
 .bit a:hover{
     text-decoration: underline;
 }
-
 #other-bits{
     display: flex;
     justify-content: flex-end;
@@ -480,12 +433,12 @@ ul.news-list li a:hover {
     font-weight: 200;
 }
 
+/* dalla-redazione */
 #dalla-redazione-title, #ultime-gallery-title{
     font-size: 0.6rem;
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC;
 }
-
 .redaz a{
     display: block;
 
@@ -507,10 +460,10 @@ ul.news-list li a:hover {
     color: #333333;
 }
 
+/* ultime-gallery */
 #ultime-gallery-title{
     margin: 1.5rem 0 0.3rem 0;
 }
-
 .ultime-gallery-item a{
     display: block;
     text-align: center;
@@ -521,38 +474,35 @@ ul.news-list li a:hover {
     text-decoration: underline;
 }
 
-
 /* FOOTER SECTION */
+
 footer {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 12px;
-    font-family: 'Georgia, Times, "Times New Roman", serif';
+    font-family: Times, serif;
     border-top: 5px solid #29a6c4;
     padding: 15px;
     margin: 20px 20px 0 20px;
 }
-
 .footer-items {
     margin-left: auto;
 }
-
 .footer-items a {
     color: #2da8c6;
     padding: 0 3px;
 }
-
 .footer-text {
     padding-left: 3px;
 }
-
 .logo-mini a img {
     width: 100px;
 }
 
 
 /* IPAD MODE */
+
 @media only screen and (max-width: 908px) {
     #tre-linee, #icona-cerca{
         display: block;
@@ -561,44 +511,38 @@ footer {
         width: 150px;
         height: 60px;
     }
-
     .sectionbar{
         display: none;
     }
-
-
     .main {
         display: grid;
         grid-template-columns: 60% 40%;
     }
-
+    .center-section {
+        border-right: none;
+    }
     .right-section, .trattino {
         display: none;
     }
-
     footer {
         flex-direction: column;
     }
-
     .footer-items {
         margin-left: 0;
     }
 }
 
-/* MOBILE MODE */
-@media only screen and (max-width: 685px) {
-    body {
-    }
 
+/* MOBILE MODE */
+
+@media only screen and (max-width: 685px) {
     .main {
         grid-template-columns: 100%;
         grid-auto-flow: row;
     }
-
     .left-section {
         border-right: none;
     }
-
     .article {
         padding: 10px 0;
         display: flex;
@@ -616,20 +560,18 @@ footer {
         flex-direction: row;
         border-bottom: 1px solid #CCC;
     }
-    /*
+    /* possibile implementazione quadratino rosso lista bits
     li.bits-item::before {
         content: "■";
         font-size: 1px;
         color: #BB1212;
         padding-right: 8px;
     }*/
-
     #last-article{
         padding: 10px 0;
         border-bottom: 1px solid rgb(204, 204, 204);
         margin-bottom: 20px;
     }
-
     #flashes-list li {
         grid-template-columns: 85% 15%;
     }
@@ -637,8 +579,4 @@ footer {
         font-size: 16px;
         line-height: 18px;
     }
-    #flashes-list li img{
-
-    }
-
 }
