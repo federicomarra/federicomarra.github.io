@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #F9E231;
     margin: 5px auto 0 auto;
     max-width: 990px;
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -136,9 +137,10 @@ a.facebook {
     content: "\f39e";
     color: white;
 }
-.instagram {
+#instagram {
     color: white;
     background-color: #c13584;
+    border-radius: 55px;
 }
 a.telegram {
     color: white;
@@ -297,7 +299,7 @@ ul.news-list li a:hover {
     text-decoration: underline;
 }
 
-/* images */
+/* episodes-foto */
 .centre-right-image{
     font-family: "BebasNeueRegular", serif;
     color: #2da8c6;
