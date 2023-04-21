@@ -46,10 +46,10 @@ ul {
 
 /* NAVIGATION BAR */
 
-nav {
+div {
     position: page;
     display: block;
-    font-family: "BebasNeueRegular", serif;
+    font-family: "Georgia", serif;
     font-size: 15px;
     text-align: left;
     letter-spacing: 0.75px;
