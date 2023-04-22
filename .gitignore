@@ -1,9 +1,8 @@
 # Mac and JetBrains to ignore
 .DS_Store
 ilpost/.DS_Store
-ilpost/.idea
 maccheroni/.DS_Store
-maccheroni/.idea
+
 
 # Default ignored files
 /shelf/
