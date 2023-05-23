@@ -1,7 +1,9 @@
 # federicomarra.github.io
 
-![HTML](https://img.shields.io/badge/html-orange?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css-blue?style=for-the-badge&logo=css3&logoColor=white)
+[![HTML](https://img.shields.io/badge/html-orange?style=for-the-badge&logo=html5&logoColor=white)](https://www.w3.org/html/)
+[![CSS](https://img.shields.io/badge/css-blue?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/Overview.en.html)
+[![GitHub Pages](https://img.shields.io/badge/github%20pages-black?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
+[![MIT License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge&color=3da639)](https://opensource.org/licenses/MIT)
 
 ## Unifi Progetto Progettazione e Produzione Multimediale: Il Post
 
