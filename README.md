@@ -7,6 +7,8 @@
 
 ## Unifi Progetto Progettazione e Produzione Multimediale: Il Post
 
+[<img alt="Il Post" height="70" src="https://www.ilpost.it/wp-content/themes/ilpost_2018/images/ilpost.svg?x84878"/>](http://ilpost.it)
+
 sito: [Il Post](https://www.ilpost.it)
 
 versione del sito, data: 12 maggio 2022
