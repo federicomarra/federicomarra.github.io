@@ -1,9 +1,12 @@
-# federicomarra.github.io
+federicomarra.github.io
 
-## il Post
+Progetto PPM (Progettazione e Produzione Multimediale)
 
-https://federicomarra.github.io/ilpost/
+@author Federico Marra
 
-## Maccheroni Podcast
+clone con elementi html e css (no javascript) di:
+sito: Il Post
+data: 12 maggio 2022
 
-https://federicomarra.github.io/maccheroni/
+
+URL: https://federicomarra.github.io/ilpost/
